@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
     return (
         <header className='app-navbar'>
-            <img src="/logo.svg" alt="Logo" />
+            <img src="logo.svg" alt="Logo" />
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><a href="#about">App Store</a></li>
