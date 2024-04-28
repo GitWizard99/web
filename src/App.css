@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Header styling */
+
+.app-navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust height as needed */
+  background-color: #f0f0f0; /* Adjust background color as desired */
+}
+
+.app-navbar img {
+  width: auto;
+  height: 71px;
+  flex-shrink: 0;
+}
+
+.app-navbar ul {
+  display: flex;
+  list-style-type: none;
+  padding: 50px;
+  margin: 0;
+}
+
+.app-navbar ul li {
+  margin: 0 15px;
+  color: #000;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.app-navbar ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.app-navbar ul li a:hover {
+  color: #ff8c00;
+}
+
+
+
+
+/* Main content styling */
+.app-main-hero {
+  background-color: #4F69B3;
+  display: grid;
+  grid-template-columns: 1.5fr 3fr 3fr 1.5fr;
+  grid-auto-rows: 7;
+  grid-gap: 0px;
+}
+
+.app-main-hero h1 {
+  grid-column: 2 / 2;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  color: #ffed94;
+  font-family: 'Open Sans';
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.app-main-hero h2 {
+  grid-column: 2 / 2;
+  margin-top: 0px;
+  margin-bottom: 75px;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-main-hero p {
+  grid-column: 2 / 2;
+  max-width: 750px;
+  margin: 0;
+  color: #FFF;
+  font-family: 'Open Sans';
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.app-main-hero .button-container {
+  grid-column: 2 / 2;
+}
+
+.app-main-hero button {
+  grid-column: 2 / 2;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: #1E1E1E;
+  text-align: center;
+  font-family: 'Open Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  align-self: start;
+  backface-visibility: hidden;
+  background-color: #ffed94;
+  border-radius: 6px;
+  border-width: 0;
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+  box-sizing: border-box;
+  width: 227px;
+  height: 69px;
+  flex-shrink: 0;
+}
+
+
+
+
+.app-main-hero button:hover {
+  background-color: #ff8c00; /* Darker background color on hover */
+}
+
+.app-main-hero img {
+  grid-column: 3 / 3;
+  grid-row: 2 / 6;
+  align-self: center;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.app-main-about {
+  display: grid;
+  grid-template-columns: 2fr 5fr 3fr 2fr;
+  grid-auto-rows: minmax(100px, auto);
+  margin-bottom: 10px;
+}
+
+.app-main-about h1 {
+  color: #000;
+  grid-column: 2;
+  font-family: 'Open Sans';
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 180px;
+  height: 39px;
+  flex-shrink: 0;
+}
+
+.app-main-about p {
+  color: #000;
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-main-about .image-container {
+  grid-column: 3 / 4; /* Set the grid column for the image container */
+  grid-row: 1 / 1;
+  justify-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-main-about .FDA,
+.app-main-about .Chicago {
+  max-width: 100%; /* Ensure images don't exceed the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.app-main-about .founders {
+  grid-column: 3 / 4;
+  grid-row: 2 / 2;
+  justify-self: center;
+}
+
+
+/* Footer styling */
+.app-footer {
+  background-color: #4F69B3;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: top;
+}
+
+.app-footer img {
+  width: 75px; /* Adjust the size as needed */
+  height: 75px; /* Adjust the size as needed */
+  padding: 75px;
+}
+
+.app-footer ul {
+  list-style: none;
+  padding: 0;
+
+}
+
+.doormat.navigation,
+.contact,
+.social.media {
+  margin: 15px; /* Use the same margin for all classes */
+}
+
+.doormat.navigation a,
+.contact a,
+.social.media a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.doormat.navigation a:hover,
+.contact a:hover,
+.social.media a:hover {
+  color: #ff8c00; /* Change the color on hover */
+}
+
+.app-footer p {
+  margin-top: 20px; /* Adjust the top margin as needed */
+  width: 100%; /* Make sure the paragraph takes full width */
+  text-align: center; /* Center the text horizontally */
+  color: #000;
+  font-family: 'Open Sans';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-footer h1.menu-title {
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
